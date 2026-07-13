@@ -15,7 +15,7 @@ export const useNotes = () => {
     try {
       setLoading(true);
       setError(null);
-      const data = await noteService.getAllNotes();
+      const data = await noteService.getALLNotes();
       setNotes(data);
     } catch (err) {
       setError('Failed to fetch notes. Is your backend running?');
